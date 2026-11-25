@@ -79,16 +79,6 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 
-	<style>
-  #phone-note { display: none; }
-  @media (max-width: 640px) and (orientation: portrait) and (pointer: coarse) {
-    #phone-note:not([hidden]) {
-      position: fixed; z-index: 5; inset: 0; display: grid; place-content: center; gap: 16px;
-      padding: 24px; background: #161b16; color: #f7eed9; font: 1rem system-ui, sans-serif; text-align: center;
-    }
-    #phone-note button { min-height: 44px; background: #f0bf73; color: #242219; border: 0; border-radius: 6px; font: inherit; }
-  }
-</style>
 </head>
 	<body>
 		<canvas id="canvas">
@@ -106,11 +96,9 @@ body {
 		</div>
 
 		<script src="browser.js"></script>
-		<div id="phone-note"><strong>Corner Lot Motors</strong><span>Turn your phone sideways for a larger game view.</span>
-  <button type="button" id="portrait">Continue in portrait</button></div>
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"deal-desk-fix.pck","experimentalVK":true,"fileSizes":{"deal-desk-fix.pck":301248,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","mainPack":"portrait-saves.pck","experimentalVK":true,"fileSizes":{"portrait-saves.pck":313152,"index.wasm":35376909},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
